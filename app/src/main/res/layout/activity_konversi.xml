@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:text="Celcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/celcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnkonvert"
+        android:text="CONVERT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="konversisuhu"
+        android:layout_above="@+id/kelvin"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelvin"
+        android:textColor="@android:color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="82dp"
+        android:layout_below="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/kelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:ems="10"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/celcius"
+        android:layout_alignStart="@+id/celcius" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Farenheit"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/farenheit"
+        android:layout_alignBottom="@+id/farenheit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/farenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:ems="10"
+        android:layout_below="@+id/kelvin"
+        android:layout_alignLeft="@+id/kelvin"
+        android:layout_alignStart="@+id/kelvin" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:text="Reamur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/farenheit"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/reamur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/farenheit"
+        android:layout_alignStart="@+id/farenheit" />
+</RelativeLayout>
